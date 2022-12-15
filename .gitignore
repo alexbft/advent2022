@@ -1,0 +1,6 @@
+*.txt
+*.json
+*.json.old
+!tsconfig.json
+.vscode
+node_modules
