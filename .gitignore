@@ -4,3 +4,6 @@
 !tsconfig.json
 .vscode
 node_modules
+*.exe
+*.rs
+*.pdb
