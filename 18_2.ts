@@ -64,7 +64,7 @@ while (queue.length > 0) {
   }
 }
 let total = 0;
-for (const cube of cubes.values()) {
+for (const cube of cubes) {
   for (const dir of dirs) {
     const newP = add(cube, dir);
     if (ts.get(newP) === Cell.air) {
