@@ -41,7 +41,7 @@ function produceAndSave(states: Map<string, GameState>, newState: GameState, pre
   if (timeLeft < 2) {
     upperLimit = lowerLimit;
   } else {
-    upperLimit = lowerLimit + (timeLeft - 1) * (timeLeft - 2) / 2;
+    upperLimit = lowerLimit + timeLeft * (timeLeft - 1) / 2;
   }
   if (upperLimit < bestResult) {
     return;
