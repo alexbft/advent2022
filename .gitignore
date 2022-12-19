@@ -1,4 +1,5 @@
 *.txt
+!*_test.txt
 *.json
 *.json.old
 !tsconfig.json
