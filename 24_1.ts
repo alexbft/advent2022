@@ -30,7 +30,7 @@ const cell = {
 };
 type CellKey = keyof typeof cell;
 
-function gcm(a: number, b: number): number {
+function lcm(a: number, b: number): number {
   let x = a, y = b;
   while (y > 1) {
     [x, y] = [y, x % y];
@@ -44,7 +44,7 @@ const width = rows[0].length;
 const height = rows.length;
 const ww = width - 2;
 const hh = height - 2;
-const cycles = gcm(ww, hh);
+const cycles = lcm(ww, hh);
 const start = new Matrix(width, height, 1);
 for (let y = 0; y < height; ++y) {
   for (let x = 0; x < width; ++x) {
