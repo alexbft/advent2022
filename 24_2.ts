@@ -1,5 +1,3 @@
-/// Weirdly gives different distances than in the test, but the sum matches.
-
 import { readFile } from 'fs/promises';
 
 type Coords = [number, number, number];
@@ -138,7 +136,7 @@ for (let cycle = 0; cycle < cycles; ++cycle) {
 //   console.log(buf);
 // }
 const startX = 1;
-const startY = 1;
+const startY = 0;
 const endX = width - 2;
 const endY = height - 1;
 const dist1 = solve([startX, startY, 0], endX, endY);
